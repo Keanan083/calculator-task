@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <button onclick="myFunction()" class="displaybtn">Display</button>
+
+    <form name="cal" id="myDIV">
+        <input type="text" class="screen" name="screen" placeholder="0">
+        <br/>
+        <input type="button" name="8" value="7" class="button" onClick="document.cal.screen.value+='7';"/>
+
+        <input type="button" name="8" value="8" class="button" onClick="document.cal.screen.value+='8';"/>
+        
+        <input type="button" name="9" value="9" class="button" onClick="document.cal.screen.value+='9';"/>
+        
+        <input type="button" name="+" value="+" class="button" onclick="document.cal.screen.value+='+';"/>
+        <br>
+
+        <input type="button" name="4" value="4" class="button" onClick="document.cal.screen.value+='4';"/>
+
+        <input type="button" name="5" value="5" class="button" onClick="document.cal.screen.value+='5';"/>
+
+        <input type="button" name="6" value="6" class="button" onClick="document.cal.screen.value+='6';"/>
+
+        <input type="button" name="-" value="-" class="button" onclick="document.cal.screen.value+='-';"/>
+        <br>
+
+        <input type="button" name="1" value="1" class="button" onClick="document.cal.screen.value+='1';"/>
+
+        <input type="button" name="2" value="2" class="button" onClick="document.cal.screen.value+='2';"/>
+
+        <input type="button" name="3" value="3" class="button" onClick="document.cal.screen.value+='3';"/>
+
+        <input type="button" name="/" value="/" class="button" onclick=" document.cal.screen.value+='/';"/>
+        <br>
+
+        <input type="button" name="." value="."  class="button" onclick="document.cal.screen.value+='.';"/>
+        <input type="button" name="0" value="0" class="button" onClick="document.cal.screen.value+='0';"/>
+        <input type="button" name="=" value="=" class="button" onclick="calc();"/>
+        <input type="button" name="x" value="*" class="button" onclick="document.cal.screen.value+='*';"/>
+        <br>
+        <input type="reset" name="C" value="C"  class="button" />
+    </form>
+</body>
+</html>
